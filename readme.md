@@ -1,7 +1,7 @@
 
 # Shopify-Verb intergrations API
 
-> Note that api below is only for ```staging``` api
+> Note that the api below is only for ```staging```
 
 ## Get shopify shop configuration
 
