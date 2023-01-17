@@ -1,7 +1,14 @@
 
-# Shopify-Verb intergrations API
+| No. | Content                                                               |
+| --- | --------------------------------------------------------------------- |
+|     |                                                                       |
+| 0   | [Shopify-Verb Intergrations APIs](#shopify-verb-intergrations-api)    |
+| 1   | [Event API](#event-api)    |
+
 
 > Note that the api below is only for ```staging```
+
+# Shopify Verb intergrations API
 
 ## Get shopify shop configuration
 
@@ -152,3 +159,62 @@ Expected Reponse
         "Weight Loss",
         "ZipSlim"
     ]
+
+# Event API
+
+## Store Events - storeEvents
+
+    http:
+        path: /events
+        method: post
+
+> https://1hedxmdsmd.execute-api.us-east-1.amazonaws.com/staging/events
+
+    curl 'https://1hedxmdsmd.execute-api.us-east-1.amazonaws.com/staging/events' \
+    -H 'authority: 1hedxmdsmd.execute-api.us-east-1.amazonaws.com' \
+    -H 'accept: application/json, text/plain, */*' \
+    -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7' \
+    -H 'content-type: application/json' \
+    -H 'origin: https://verblive-staging.shop.com' \
+    -H 'referer: https://verblive-staging.shop.com/' \
+    -H 'sec-ch-ua: "Not_A Brand";v="99", "Microsoft Edge";v="109", "Chromium";v="109"' \
+    -H 'sec-ch-ua-mobile: ?0' \
+    -H 'sec-ch-ua-platform: "Windows"' \
+    -H 'sec-fetch-dest: empty' \
+    -H 'sec-fetch-mode: cors' \
+    -H 'sec-fetch-site: cross-site' \
+    -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.52' \
+    -H 'x-api-key: IHa5vMmPDW5ueCaqqfzfX6IfcjZSfEvf5PTsByUp' \
+    -H 'x-auth-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM5NTIyMjgsImVtYWlsIjoibmhhbkBnbWFpbC5jb20iLCJpc3N1ZXJfbWV0YWRhdGEiOnsid2ViaG9va19kb21haW4iOiJodHRwczpcL1wvdW5mcmFuY2hpc2VtYXJrZXRpbmcuY29tLmJldGEuY3JtLnZlcmIudGVjaCIsIndlYmhvb2tfZW5kcG9pbnRfam9pbiI6Imh0dHBzOlwvXC91bmZyYW5jaGlzZW1hcmtldGluZy5jb20uYmV0YS5jcm0udmVyYi50ZWNoXC9yZW1vdGVcL2NvbnRhY3RzXC9hZGQuanNvbiIsIndlYmhvb2tfZ3JvdXAiOiJyZXBzaXRlcyIsIndlYmhvb2tfdG9rZW4iOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpJVXpJMU5pSjkuZXlKbGVIQWlPakUyTnpReU1EUXlNamdzSW1sa0lqb2lNVEEzTkRnMU5TSXNJbk5wZEdWZmFXUWlPaUl4TnpraWZRLlNHSzdiUWZtNEs3ZjI0UEJRajhuYUVUdVF0M1BMa3BiMHEycXdXYXhKd0EiLCJzaG9wX3NpdGVfbmFtZSI6ZmFsc2V9LCJmYW1pbHlfbmFtZSI6Ik5ndXllbiBUaGFuaCIsImdpdmVuX25hbWUiOiJOaGFuIiwibmlja25hbWUiOiJOaGFuIE5ndXllbiBUaGFuaCIsInRoaXJkX3BhcnR5X3VzZXJuYW1lIjpudWxsLCJkaXNwbGF5X2xhbmd1YWdlIjoiZW5fVVMiLCJsb2NhbGUiOiJlbl9VUyIsInVzZXJfbGhwIjowLCJzdWIiOiJyZXBzaXRlc3xtYXJrZXRhbWVyLTEwNzQ4NTUiLCJtYXhfcHJlc2VudGVycyI6IjQiLCJtYXhfbnVtYmVyX2F0dGVuZGVlcyI6MTUsImxpdmVfbWF4X2xpdmVfdmlkZW9zIjoyNSwibWF4X21lZXRpbmdfbGVuZ3RoIjo2MCwidXBkYXRlZF9hdCI6IjIwMjMtMDEtMTcgMDE6NDM6NDgiLCJzdG9yZV91cmwiOm51bGwsInN0b3JlX2FwaV9rZXkiOm51bGwsInN0b3JlX3R5cGUiOm51bGwsImxpdmVfdmlkZW9zIjp0cnVlLCJyZWdpb24iOiJhbWVyaWNhIn0.r5dXX_-CLFPpfMEskKbYzCPa5Xwamvq_ljNJD2C29gA' \
+    --data-raw '[{"event_data":{"attendee_email":"nhan@gmail.com","attendee_first":"Nhan","attendee_id":"","attendee_role":"","attendee_last":"Nguyen Thanh (host)","client_id":"repsites","stream_id":1100002821,"stream_instance_id":"2aa0563a-515a-4f7b-8571-5f56782eddcb","user_id":"marketamer-1074855","interaction_id":"38508829-441e-4697-8bb5-17940d061985","interaction_label":"Twitter","interaction_action":"https://twitter.com/","interaction_type":"social","interaction_imageUrl":"https://verb-core-configs.s3.amazonaws.com/assets/social.svg","elapsed_seconds":"18","date":"Tue, 17 Jan 2023 08:44:45 GMT"},"event_type":"invite_url_copied","group_parameters":{}}]' \
+    --compressed
+
+Expected Reponse
+
+    {
+        "message": "OK"
+    }
+
+Event type:
+
+    'attendee_left'
+    'attendee_limit_reached'
+    'attendee_joined'
+    'camera_started'
+    'camera_stopped'
+    'chat_opened'
+    'chat_closed'
+    'chat_message_sent'
+    'guest_sign_in'
+    'host_sign_up'
+    'invite_url_copied'
+    'microphone_enabled'
+    'microphone_disabled'
+    'screen_share_started'
+    'screen_share_stopped'
+    'interaction_clicked'
+    'interaction_created'
+    'stream_started'
+    'stream_ended'
+    'video_watch_progress'
+    'video_created'
