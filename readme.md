@@ -4,6 +4,7 @@
 |     |                                                                       |
 | 0   | [Shopify-Verb Intergrations APIs](#shopify-verb-intergrations-api)    |
 | 1   | [Event API](#event-api)    |
+| 2   | [Message Event](#message-event)    |
 
 
 > Note that the api below is only for ```staging```
@@ -218,3 +219,107 @@ Event type:
     'stream_ended'
     'video_watch_progress'
     'video_created'
+
+---
+
+---
+
+# Message Event
+
+## Message Interface
+
+    export interface RemoteMessageInput {
+        action: MessageActions;
+        data: DataT;
+        type: MessageTypes;
+        date?: string;
+    }
+
+## Message Action
+
+    export interface MessageActions {
+    // chat.*
+    'chat.message': string;
+    // interaction.*
+    'interaction.interaction-data': void;
+    // commands.*
+    'command': null;
+    // stream.*
+    'stream.configuration': void;
+    }
+
+## Message Types
+
+    export interface MessageTypes {
+    // configuration.*
+    'configuration.camera-enabled-change': boolean;
+    'configuration.options-change': StreamConfigurationResponseSchema;
+    'configuration.screen-share-status-change': boolean;
+    'configuration.copresenter-join': boolean;
+    'configuration.stream-duration': number;
+    'configuration.stream-paused': boolean;
+    'configuration.stream-start': null;
+    'configuration.stream-end': null;
+    'configuration.join-data': ConfigurationJoinData;
+
+    // interaction.*
+    'interaction.interaction-data': InteractionDataPayload;
+    'interaction.clicked': string;
+    'interaction.edited': string;
+
+    // command.*
+    'presenter.mute': boolean;
+
+    // chat.*
+    'chat.message': string;
+
+    // shopping.*
+    'shop.enable-shop': boolean;
+    'shop.activity': string;
+    'shop.update-products': ShopUpdateProductsPayload;
+    'shop.owner-change': ShopOwnerChangePayload;
+    }
+
+## Sample message
+
+Chat message event:
+
+    {
+    "text": {
+        "action": "chat.message",
+        "data": "hello",
+        "type": "chat.message",
+        "date": "2023-02-07T09:16:22.301Z"
+    },
+    "messageType": "TEXT"
+    }
+
+Stream duration event (elapsedSeconds):
+
+    {
+    "text": {
+        "data": {
+        "elapsedSeconds": 731,
+        },
+        "action": "stream.configuration",
+        "type": "configuration.join-data"
+    },
+    "messageType": "TEXT"
+    }
+
+Stream start 
+
+    {
+    action: "stream.configuration",
+    data: null,
+    type: "configuration.stream-start",
+    }
+
+Stream end
+
+    {
+    action: "stream.configuration",
+    data: null,
+    type: "configuration.stream-end",
+    }
+
