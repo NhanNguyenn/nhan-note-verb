@@ -328,6 +328,8 @@ Stream end
 
 # /authentication/referrer
 
+> For gennerating referrer token of the CRM user inside Live
+
 https://1hedxmdsmd.execute-api.us-east-1.amazonaws.com/staging/authentication/referrer
 
 ```x-auth-token``` is CRM user token
