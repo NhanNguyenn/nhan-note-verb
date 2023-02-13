@@ -1,0 +1,62 @@
+[{
+    "exp": 1676197910,
+    "email": "nhan@gmail.com",
+    "issuer_metadata": {
+      "webhook_domain": "https://unfranchisemarketing.com.beta.crm.verb.tech",
+      "webhook_endpoint_join": "https://unfranchisemarketing.com.beta.crm.verb.tech/remote/contacts/add.json",
+      "webhook_group": "repsites",
+      "webhook_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzY0NDk5MTAsImlkIjoiMTA3NDg1NSIsInNpdGVfaWQiOiIxNzkifQ.nY_Jzmwl6QkdgHxjWGD4a3dEKmCRFK8Z1M_cpkG5MTY",
+      "shop_site_name": false
+    },
+    "family_name": "Nguyen Thanh",
+    "given_name": "Nhan",
+    "company_name": "Market America",
+    "nickname": "Nhan Nguyen Thanh",
+    "third_party_username": "Nhan",
+    "display_language": "en_US",
+    "locale": "en_US",
+    "user_lhp": 0,
+    "sub": "repsites|marketamer-1074855",
+    "max_presenters": "4",
+    "max_number_attendees": 15,
+    "live_max_live_videos": 25,
+    "max_meeting_length": 60,
+    "updated_at": "2023-02-12 01:31:50",
+    "store_url": null,
+    "store_api_key": null,
+    "store_type": null,
+    "live_videos": true,
+    "region": "america"
+  },
+
+  {
+    "exp": 1676228731,
+    "email": "dungnguyen@mailinator.com",
+    "issuer_metadata": {
+      "webhook_domain": "https://unfranchisemarketing.com.beta.crm.verb.tech",
+      "webhook_endpoint_join": "https://unfranchisemarketing.com.beta.crm.verb.tech/remote/contacts/add.json",
+      "webhook_group": "repsites",
+      "webhook_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzY0ODA3MzEsImlkIjoiMTA3NDg0NiIsInNpdGVfaWQiOiIxNzkifQ.swLc99wicFSGS1c8Go1gpWQqQWDaXfutQ38i-UCp0aI",
+      "shop_site_name": false
+    },
+    "family_name": "nguyen",
+    "given_name": "dung",
+    "company_name": "Market America",
+    "nickname": "dung nguyen",
+    "third_party_username": "dungnguyen",
+    "display_language": "en_US",
+    "locale": "en_US",
+    "user_lhp": 0,
+    "sub": "repsites|marketamer-1074846",
+    "max_presenters": "4",
+    "max_number_attendees": 15,
+    "live_max_live_videos": 25,
+    "max_meeting_length": 60,
+    "updated_at": "2023-02-12 10:05:31",
+    "store_url": null,
+    "store_api_key": null,
+    "store_type": null,
+    "live_videos": true,
+    "region": "america"
+  }
+]
