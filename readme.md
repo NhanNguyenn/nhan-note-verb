@@ -5,6 +5,7 @@
 | 0   | [Shopify-Verb Intergrations APIs](#shopify-verb-intergrations-api)    |
 | 1   | [Event API](#event-api)    |
 | 2   | [Message Event](#message-event)    |
+| 3   | [Referrer Token API](#referrer-token-api)    |
 
 
 > Note that the api below is only for ```staging```
@@ -323,6 +324,7 @@ Stream end
     type: "configuration.stream-end",
     }
 
+# Referrer Token API
 
 # /authentication/referrer
 
