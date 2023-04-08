@@ -107,3 +107,8 @@ Case 3: Join a Live stream from the referer link
       width: 640,
     },
   };
+
+
+# Access Mongo Docker image
+
+docker exec -it verb-video-api_mongo_1 mongosh -u "root" -p "root"
