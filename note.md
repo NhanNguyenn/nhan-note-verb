@@ -112,3 +112,7 @@ Case 3: Join a Live stream from the referer link
 # Access Mongo Docker image
 
 docker exec -it verb-video-api_mongo_1 mongosh -u "root" -p "root"
+
+# Debug 
+
+https://stackoverflow.com/questions/53563469/cannot-find-node-process-using-vscode-debugger
